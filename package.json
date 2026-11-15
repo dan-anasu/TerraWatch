@@ -1,8 +1,22 @@
 {
   "name": "terrawatch",
+  "description": "A lightweight environmental monitoring areas workspace",
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "environmental-monitoring",
+    "geospatial",
+    "leaflet",
+    "openstreetmap"
+  ],
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
   "scripts": {
     "start": "node server.js",
     "test": "node --test"

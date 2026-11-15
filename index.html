@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7f4" />
+    <meta name="description" content="TerraWatch environmental monitoring workspace" />
+    <title>TerraWatch — Monitoring Areas</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#areas"><span class="brand-mark">◈</span><span class="brand-name">terra<span>watch</span></span></a>
+        <div class="workspace-label">WORKSPACE</div>
+        <nav class="primary-nav" aria-label="Main navigation">
+          <button class="nav-item" data-page="Dashboard"><span>▦</span> Dashboard</button>
+          <button class="nav-item active" data-page="Monitoring Areas"><span>▱</span> Monitoring Areas<i class="nav-indicator"></i></button>
+          <button class="nav-item" data-page="Reports"><span>▤</span> Reports</button>
+        </nav>
+        <div class="sidebar-bottom"><div class="region-card"><span class="region-icon">◎</span><div><strong>Monitoring region</strong><span>Global coverage</span></div><span class="online-dot"></span></div><div class="sidebar-footer"><span class="avatar">EO</span><div><strong>Environmental Office</strong><span>Monitoring team</span></div><button class="more-button" aria-label="More workspace options">···</button></div></div>
+      </aside>
+      <div class="main-column">
+        <header class="topbar"><button class="mobile-menu" aria-label="Toggle navigation">☰</button><div class="topbar-context"><span class="context-mark">◎</span> Environmental monitoring</div><div class="topbar-right"><span class="system-status"><span></span>System operational</span><span class="topbar-divider"></span><span class="topbar-date">Workspace</span></div></header>
+        <div class="mobile-nav" hidden><button data-page="Dashboard">Dashboard</button><button data-page="Monitoring Areas">Monitoring Areas</button><button data-page="Reports">Reports</button></div>
+        <main class="main-content" id="content"></main>
+      </div>
+    </div>
+    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
